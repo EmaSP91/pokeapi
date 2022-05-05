@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(145,145,212,0.5578606442577031) 35%, rgba(0,212,255,1) 100%), url(./img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+.search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.808);
+    height: 150px;
+}
+
+.logo{
+  width: 120px;
+}
+
+.search-container input{
+  height: 35px;
+  border:1px solid black;
+  border-radius: 15px;
+  width: 320px;
+  padding-left: 15px;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+button{
+  padding: 6px 50px;
+  border-radius: 15px;
+  border:1px solid black;
+  font-size: 1.1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.938);
+  cursor: pointer;
+  transition: .5s;
+  
+}
+
+button:hover{
+  color: white;
+  background-color: rgba(44, 184, 212, 0.685)
+ 
+}
+
+.display{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.display img{
+  width: 200px;
+  height: 200px;
+}
+
+.character{
+  margin-top: 20px;
+  font-size: 1.6rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 1px black;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.card{
+  min-width: 20%;
+  height: 320px;
+  background-color: rgba(32, 144, 167, 0.685);/*rgba(0, 0, 0, 0.938);*/
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card img{
+  width: 200px;
+  height: 200px;
+}
+
+
+h2,h3{
+  font-size: 1rem;
+  color:white;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+}
+
+span{
+  font-size: 1.1rem;
+  color: black;/*rgba(0, 213, 255, 0.932);*/
+ 
+}
+
+@media (max-width:768px){
+    .card{
+      width: 40%;
+    }
+}
+
+@media (max-width:360px){
+  .card{
+    width: 80%;
+  }
+  .display img{
+    width: 150px;
+    height: 150px;
+  }
+
+  .search-container{
+    height: 200px;
+  }
+  .search-container input{
+    width: 270px;
+    height: 35px;
+
+  }
+  button{
+    padding: 5px 40px;
+  }
+}
+
