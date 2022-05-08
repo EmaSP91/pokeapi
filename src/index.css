@@ -9,7 +9,6 @@
 body{
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(145,145,212,0.5578606442577031) 35%, rgba(0,212,255,1) 100%), url(./img/fondo.jpg);
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -118,13 +117,38 @@ span{
  
 }
 
+
+@media (max-width:1054px){
+  .card{
+    width: 35%;
+  }
+}
+
+
 @media (max-width:768px){
     .card{
-      width: 40%;
+      width: 55%;
+    }
+
+    body{
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(145,145,212,0.5578606442577031) 35%, rgba(0,212,255,1) 100%), url(./img/fondo.mobile.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .character{
+      font-size: 1.5rem;
     }
 }
 
-@media (max-width:360px){
+@media (max-width:500px){
+
+  body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(145,145,212,0.5578606442577031) 35%, rgba(0,212,255,1) 100%), url(./img/fondo.mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
   .card{
     width: 80%;
   }
@@ -143,6 +167,9 @@ span{
   }
   button{
     padding: 5px 40px;
+  }
+  .character{
+    font-size:1.4rem;
   }
 }
 
